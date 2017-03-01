@@ -9,3 +9,5 @@ mail.smtp.options               : {"secure":false,"port":25,"user":"","password"
 mail.address.from               : your@yourwebsite.com
 mail.address.reply              : your@yourwebsite.com
 mail.address.bcc                :
+
+allow-compile-script        : false
