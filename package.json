@@ -1,6 +1,6 @@
 {
-  "name": "webpack-demo",
-  "version": "1.0.0",
+  "name": "vuejs-totaljs-project",
+  "version": "1.0.1",
   "description": "",
   "main": "./main.js",
   "scripts": {
@@ -8,6 +8,11 @@
     "dev": "webpack --progress --watch & node debug.js",
     "build": "webpack"
   },
+  "registry": "github",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/edutucci/vuejs-totaljs-project.git"
+},  
   "dependencies": {
     "dev": "^0.1.3",
     "total.js": "^2.4.0",
