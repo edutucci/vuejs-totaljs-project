@@ -1,4 +1,5 @@
 var path = require('path');
+var OpenBrowserPlugin = require('open-browser-webpack-plugin');
 
 module.exports = {
   entry: './main.js',
@@ -39,5 +40,8 @@ module.exports = {
   },
   resolve: {
     extensions: [".js", ".json", ".vue", ".css"]
-  }
+  },
+  plugins: [
+    new OpenBrowserPlugin({ url: 'http://localhost:8000' })
+  ]  
 }
