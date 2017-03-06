@@ -13,9 +13,12 @@
 * [totaljs 2.x](https://www.totaljs.com/)
 
 ## Installation
-Download the project using the git command using the terminal
+Download the project using the git command using the terminal and install all dependences
 ``` bash 
 git clone https://github.com/edutucci/vuejs-totaljs-project.git
+```
+``` bash 
+npm install
 ```
 ## Usage
 ### Run
