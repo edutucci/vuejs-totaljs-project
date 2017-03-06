@@ -1,7 +1,7 @@
 var path = require('path');
-var OpenBrowserPlugin = require('open-browser-webpack-plugin');
+const WebpackBrowserPlugin = require('webpack-browser-plugin');
 
-module.exports = {
+var WebpackConfig = {
   entry: './main.js',
   output: {
     filename: 'app.js',
@@ -42,6 +42,16 @@ module.exports = {
     extensions: [".js", ".json", ".vue", ".css"]
   },
   plugins: [
-    new OpenBrowserPlugin({ url: 'http://localhost:8000' })
-  ]  
+     new WebpackBrowserPlugin({
+       port: 8000
+     })
+  ]   
 }
+
+var configuration = [WebpackConfig];
+configuration.watch = true;
+
+/* EXPORTS */
+module.exports = configuration;
+
+
