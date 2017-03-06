@@ -1,7 +1,7 @@
 #vuejs-totaljs-project
 <p align="center">
     <a href="https://vuejs.org/" target="_blank"><img width="100" height="100" src="https://vuejs.org/images/logo.png"/></a>
-    <a href="https://www.totaljs.com/img/logo-totaljs.png" target="_blank"><img width="200"height="100"src="https://www.totaljs.com/img/logo-totaljs.png"/></a>
+    <a href="https://www.totaljs.com/" target="_blank"><img width="200"height="100"src="https://www.totaljs.com/img/logo-totaljs.png"/></a>
 </p>
 
 <p align="center">
