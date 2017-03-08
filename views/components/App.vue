@@ -24,7 +24,6 @@
 import Hello from "./Hello.vue"
 
 export default {
-  name: 'app',
   data () {
     return {
       msg: 'Welcome to Your Vue.js App'
@@ -36,7 +35,7 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
