@@ -1,7 +1,7 @@
 import Vue from 'vue'
-import App from './views/components/App'
+import VueComp from './views/components/VueComp'
 
-new Vue({
-  el: '#app',
-  render: h => h(App)
-})
+ new Vue({
+   el: '#vuecomp',
+   render: h => h(VueComp)
+ })
