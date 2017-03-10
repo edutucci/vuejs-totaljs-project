@@ -1,22 +1,19 @@
 <template>
     <div id="vuecomp">
-
-        <div class="vueoverlay">
-
-            <div class="vuecomp">
-                <li><a href="#" @click="vercomp('vuetools')">VUETOOLS</a></li>
-                </br>
-                <li><a href="#" @click="vercomp('vueapp')"> VUEAPP </a></li>
-            </div>
-            <div class="vuecomplist">
-                <div v-show="comp == 'vuetools'">
-                    <vuetools/>
+        <div class="divflex">
+                <div>
+                        <a href="#" style="color:blue;" @click="vercomp('vuetools')">VUETOOLS</a>
+                        <a href="#" style="color:blue;" @click="vercomp('vueapp')"> VUEAPP </a>
                 </div>
-                <div v-show="comp == 'vueapp'">
-                    <app/>
+                <div class="divflex" >
+                    <div v-show="comp == 'vuetools'" class="divframe">
+                        <vuetools/>
+                     </div>
+                    <div v-show="comp == 'vueapp'" class= " divframe">
+                         <app/>
+                    </div> 
                 </div>
-            </div>
-        </div>
+        </div>        
     </div>
 </template>
 
@@ -27,12 +24,12 @@
     export default {
         data() {
             return {
-                comp: ''
+                comp: 'vuetools'
             }
         },
         methods: {
-            vercomp: function (nome) {
-                this.comp = nome;
+            vercomp: function (name) {
+                this.comp = name;
             }
         },
         components: {
